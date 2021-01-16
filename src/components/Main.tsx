@@ -2,10 +2,12 @@ import { Stack } from '@chakra-ui/react'
 
 export const Main = (props) => (
   <Stack
-    spacing="1.5rem"
+  height="200hv"
+    spacing="2.5rem"
     width="100%"
-    maxWidth="48rem"
-    mt="-45vh"
+    alignItems="center"
+    maxWidth="60rem"
+    mt="-12vh"
     pt="8rem"
     px="1rem"
     {...props}
