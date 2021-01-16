@@ -13,7 +13,7 @@ import { Hero } from '../components/Hero'
 import { Container } from '../components/Container'
 import { Main } from '../components/Main'
 import React, { useState } from 'react'
-import { strings } from './strings'
+import { strings } from '../strings'
 import { Footer } from '../components/Footer'
 import { ToggleLanguage } from '../components/ToggleLanguage'
 

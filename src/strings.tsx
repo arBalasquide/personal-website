@@ -1,4 +1,4 @@
-export let strings = {
+export const strings = {
   EN: {
     summary: "Passionate software engineer with experience in Full-Stack, AI, Embedded Systems, and DevOps development. ",
     resume: "Rèsumè",
@@ -23,3 +23,5 @@ export let strings = {
     ja_resources: "日本語の教材",
   }
 };
+
+export default strings
