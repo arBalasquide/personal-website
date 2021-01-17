@@ -1,4 +1,5 @@
-import { Box, Badge, Link } from "@chakra-ui/react"
+import { LinkIcon } from "@chakra-ui/icons";
+import { Box, Badge, Link, Text} from "@chakra-ui/react"
 import React from "react"
 
 type ProjectCards = {
@@ -10,23 +11,13 @@ type ProjectCards = {
 
 export const ProjectCard: React.FC<ProjectCards> = ({ title, dependencies, summary, url }) => {
     return (
-      <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
-        <Box p="6">
-          <Box d="flex" alignItems="baseline">
-            <Badge borderRadius="full" px="2" colorScheme="teal">
-              {dependencies}
+      <Box borderWidth="1px" overflow="hidden">
+        <Box p="10">
+          <Box d="flex" alignItems="baseline" pb="4">
+            <Badge borderRadius="full" p="1" width="100%" variant="outline" colorScheme="green">
+              <Text align="center" isTruncated>{dependencies}</Text>
             </Badge>
-            <Box
-              color="gray.500"
-              fontWeight="semibold"
-              letterSpacing="wide"
-              fontSize="xs"
-              textTransform="uppercase"
-              ml="2"
-            >
-            </Box>
           </Box>
-  
           <Box
             mt="1"
             fontWeight="semibold"
@@ -34,14 +25,14 @@ export const ProjectCard: React.FC<ProjectCards> = ({ title, dependencies, summa
             lineHeight="tight"
             isTruncated
           >
-            <Link href={url}>{title}</Link>
+            <LinkIcon as={LinkIcon} pr="1"/>
+            <Link href={url} color="purple.300">{title}</Link>
           </Box>
-  
           <Box>
           </Box>
           <Box d="flex" mt="2" alignItems="center">
             </Box>
-            <Box>{summary}</Box>
+            <Box><Text>{summary}</Text></Box>
         </Box>
       </Box>
     )

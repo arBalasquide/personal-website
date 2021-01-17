@@ -30,12 +30,14 @@ export const Projects = () => {
             left="1rem">
                 <ToggleLanguage language={language} setLanguage={setLanguage}/>
             </Flex>
-            <Main>
+            <Main height="650px">
                 <Grid templateColumns="repeat(3, 1fr)" gap={10}>
                     {getCard("media_server")}
                     {getCard("website")}
                     {getCard("amazon_bot")}
                     {getCard("devops")}
+                    {getCard("linux_scripts")}
+                    {getCard("aoc")}
                 </Grid>
             </Main>
             <Footer>
