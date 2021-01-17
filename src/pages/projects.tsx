@@ -1,4 +1,4 @@
-import { Flex, Grid } from '@chakra-ui/react'
+import { Flex, Grid, SimpleGrid } from '@chakra-ui/react'
 import { Container } from '../components/Container'
 import { Main } from '../components/Main'
 import React, { useState } from 'react'
@@ -30,15 +30,15 @@ export const Projects = () => {
             left="1rem">
                 <ToggleLanguage language={language} setLanguage={setLanguage}/>
             </Flex>
-            <Main height="650px">
-                <Grid templateColumns="repeat(3, 1fr)" gap={10}>
+            <Main>
+                <SimpleGrid columns={[1, 2, 3]} gap={10}>
                     {getCard("media_server")}
                     {getCard("website")}
                     {getCard("amazon_bot")}
                     {getCard("devops")}
                     {getCard("linux_scripts")}
                     {getCard("aoc")}
-                </Grid>
+                </SimpleGrid>
             </Main>
             <Footer>
                 {strings[language].footer}

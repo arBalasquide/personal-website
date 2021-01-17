@@ -4,6 +4,7 @@ import {
   Flex,
   GridItem,
   Grid,
+  SimpleGrid,
 } from '@chakra-ui/react'
 import { AtSignIcon, AttachmentIcon, CheckCircleIcon, EditIcon, EmailIcon } from '@chakra-ui/icons'
 import { Hero } from '../components/Hero'
@@ -29,7 +30,7 @@ const Index = () => {
         <Text>
             {strings[language].summary}
           </Text>
-        <Grid  templateColumns="repeat(2, 1fr)" gap={10}>
+        <SimpleGrid  columns={[1, null, 2]} gap={10}>
           <GridItem>
             <Text as="u">{strings[language].programming_lang}</Text>
             <List>
@@ -66,7 +67,7 @@ const Index = () => {
           </GridItem>
           <GridItem width="330px" height="230px">
           </GridItem>
-        </Grid>
+        </SimpleGrid>
       </Main>
       <Footer>
           {strings[language].footer}
