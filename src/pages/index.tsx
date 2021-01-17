@@ -1,9 +1,6 @@
 import {
-  Link as ChakraLink,
   Text,
   List,
-  ListIcon,
-  ListItem,
   Flex,
   GridItem,
   Grid,
@@ -16,8 +13,7 @@ import React, { useState } from 'react'
 import { strings } from '../strings'
 import { Footer } from '../components/Footer'
 import { ToggleLanguage } from '../components/ToggleLanguage'
-
-// Can't change some things here into components, but 2 lazy
+import MyListItem from '../components/MyListItem'
 
 const Index = () => {
   const [language, setLanguage] = useState("EN"); 
@@ -38,104 +34,34 @@ const Index = () => {
             <Text as="u">{strings[language].programming_lang}</Text>
             <List>
               <br />
-              <ListItem>
-                <ListIcon as={AtSignIcon} color="green.500"/>
-                Python
-              </ListItem>
-              <ListItem>
-                <ListIcon as={AtSignIcon} color="green.500"/>
-                Node.js, Javacript, Typescript
-              </ListItem>
-              <ListItem>
-                <ListIcon as={AtSignIcon} color="green.500"/>
-                Java
-              </ListItem>
-              <ListItem>
-                <ListIcon as={AtSignIcon} color="green.500"/>
-                C/C++
-              </ListItem>
-              <ListItem>
-                <ListIcon as={AtSignIcon} color="green.500"/>
-                Bash
-              </ListItem>
-              <ListItem>
-                <ListIcon as={AtSignIcon} color="green.500"/>
-                SQL, Postgresql, MongoDB
-              </ListItem>
+              <MyListItem text="Python" icon={AtSignIcon} />
+              <MyListItem text="Node.js, Javacript, Typescript" icon={AtSignIcon} />
+              <MyListItem text="Java" icon={AtSignIcon} />
+              <MyListItem text="C/C++" icon={AtSignIcon} />
+              <MyListItem text="Bash" icon={AtSignIcon} />
+              <MyListItem text="SQL/MySQL, Postgresql, MongoDB" icon={AtSignIcon} />
             </List>
           </GridItem>
           <GridItem>
             <Text as="u">{strings[language].other_experience}</Text>
             <List>
               <br />
-              <ListItem>
-                <ListIcon as={AtSignIcon} color="green.500"/>
-                ROS
-              </ListItem>
-              <ListItem>
-                <ListIcon as={AtSignIcon} color="green.500"/>
-                Linux & Windows
-              </ListItem>
-              <ListItem>
-                <ListIcon as={AtSignIcon} color="green.500"/>
-                OpenCV & YOLO
-              </ListItem>
-              <ListItem>
-                <ListIcon as={AtSignIcon} color="green.500"/>
-                Graphql, Apollo, React, Next.js
-              </ListItem>
-              <ListItem>
-                <ListIcon as={AtSignIcon} color="green.500"/>
-                Arduino & Raspberrypi
-              </ListItem>
-              <ListItem>
-                <ListIcon as={AtSignIcon} color="green.500"/>
-                NGINX & Apache
-              </ListItem>
+              <MyListItem text="ROS" icon={AtSignIcon} />
+              <MyListItem text="Linux & Windows" icon={AtSignIcon} />
+              <MyListItem text="OpenCV & YOLO" icon={AtSignIcon} />
+              <MyListItem text="Graphql, Apollo, React, Next.js" icon={AtSignIcon} />
+              <MyListItem text="Arduino & Raspberrypi" icon={AtSignIcon} />
+              <MyListItem text="NGINX & Apache" icon={AtSignIcon} />
             </List>
           </GridItem>
           <GridItem>
             <List spacing={3} my={0}>
-              <ListItem>
-                <ListIcon as={AttachmentIcon} color="green.500" />
-                <ChakraLink
-                  href="https://balasquide.xyz/resume.pdf"
-                  flexGrow={1}
-                  mr={2}
-                >
-                  {strings[language].resume}
-                </ChakraLink>
-              </ListItem>
-              <ListItem>
-                <ListIcon as={CheckCircleIcon} color="green.500" />
-                <ChakraLink href="/projects" flexGrow={1} mr={2}>
-                  {strings[language].projects}
-                </ChakraLink>
-              </ListItem>
-              <ListItem>
-                <ListIcon as={CheckCircleIcon} color="green.500" />
-                <ChakraLink isExternal href="https://github.com/arBalasquide" flexGrow={1} mr={2}>
-                  Github
-                </ChakraLink>
-              </ListItem>
-              <ListItem>
-                <ListIcon as={EmailIcon} color="green.500" />
-                <ChakraLink isExternal href="mailto:ar@balasquide.xyz" flexGrow={1} mr={2}>
-                  ar@balasquide.xyz
-                </ChakraLink>
-              </ListItem>
-              <ListItem>
-                <ListIcon as={EditIcon} color="green.500" />
-                <ChakraLink isExternal href="https://memoir.balasquide.xyz/" flexGrow={1} mr={2}>
-                  {strings[language].memoir}
-                </ChakraLink>
-              </ListItem>
-              <ListItem>
-                <ListIcon as={EditIcon} color="green.500" />
-                <ChakraLink isExternal href="https://ja.balasquide.xyz/" flexGrow={1} mr={2}>
-                  {strings[language].ja_resources}
-                </ChakraLink>
-              </ListItem>
+              <MyListItem text={strings[language].resume} icon={AttachmentIcon} url="/resume.pdf" />
+              <MyListItem text={strings[language].projects} icon={CheckCircleIcon} url="/projects" />
+              <MyListItem text="Github" icon={CheckCircleIcon} url="https://github.com/arBalasquide" />
+              <MyListItem text="ar@balasquide.xyz" icon={EmailIcon} url="mailto:ar@balasquide.xyz" />
+              <MyListItem text={strings[language].memoir} icon={EditIcon} url="https://memoir.balasquide.xyz"/>
+              <MyListItem text={strings[language].ja_resources} icon={EditIcon} url="https://ja.balasquide.xyz" />
             </List>
           </GridItem>
           <GridItem width="330px" height="230px">
