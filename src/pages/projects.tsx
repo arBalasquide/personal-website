@@ -8,6 +8,7 @@ import ProjectCard from '../components/Cards'
 import cards from '../projectinfo'
 import { Hero } from '../components/Hero'
 import { ToggleLanguage } from '../components/ToggleLanguage'
+import HomeButton from '../components/HomeButton'
 
 export const Projects = () => {
     const [language, setLanguage] = useState("EN");
@@ -28,6 +29,7 @@ export const Projects = () => {
             <Flex  position="fixed"top="1rem"
             left="1rem">
                 <ToggleLanguage language={language} setLanguage={setLanguage}/>
+                <HomeButton />
             </Flex>
             <Main>
                 <Hero title="Projects" />

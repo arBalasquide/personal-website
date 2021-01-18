@@ -1,6 +1,5 @@
 import { ChakraProvider, ColorModeProvider } from '@chakra-ui/react'
 import { useState } from 'react'
-import { ToggleLanguage } from '../components/ToggleLanguage'
 
 import theme from '../theme'
 

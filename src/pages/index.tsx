@@ -24,7 +24,7 @@ const Index = () => {
       <Flex  position="fixed"top="1rem"
         left="1rem">
           <ToggleLanguage language={language} setLanguage={setLanguage} />
-        </Flex>
+      </Flex>
       <Main>
       <Hero title="adrián rivera balasquide"/>
         <Text>
