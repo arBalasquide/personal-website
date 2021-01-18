@@ -25,13 +25,13 @@ export const Projects = () => {
 
     return (
         <Container>
-            <Hero title="Projects" />
             <Flex  position="fixed"top="1rem"
             left="1rem">
                 <ToggleLanguage language={language} setLanguage={setLanguage}/>
             </Flex>
             <Main>
-                <SimpleGrid columns={[1, 2, 3]} gap={10}>
+                <Hero title="Projects" />
+                <SimpleGrid columns={[1, 2, 3]} spacingY="80px" gap={10}>
                     {getCard("media_server")}
                     {getCard("website")}
                     {getCard("amazon_bot")}
