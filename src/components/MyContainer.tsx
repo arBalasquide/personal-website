@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 
-export const Container = (props) => {
+export const MyContainer = (props) => {
   return (
     <Flex
       direction="column"

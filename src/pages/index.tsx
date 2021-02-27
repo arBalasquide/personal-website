@@ -1,4 +1,4 @@
-import { Text, List, Flex, GridItem, Grid, SimpleGrid } from "@chakra-ui/react";
+import { Text, List, Flex, GridItem, SimpleGrid } from "@chakra-ui/react";
 import {
   AtSignIcon,
   AttachmentIcon,
@@ -7,19 +7,18 @@ import {
   EmailIcon,
 } from "@chakra-ui/icons";
 import { Hero } from "../components/Hero";
-import { Container } from "../components/Container";
 import { Main } from "../components/Main";
 import React, { useState } from "react";
 import { strings } from "../strings";
 import { Footer } from "../components/Footer";
 import { ToggleLanguage } from "../components/ToggleLanguage";
 import MyListItem from "../components/MyListItem";
+import { MyContainer } from "../components/MyContainer";
 
 const Index = () => {
   const [language, setLanguage] = useState("EN");
-
   return (
-    <Container>
+    <MyContainer>
       <Flex position="fixed" top="1rem" left="1rem">
         <ToggleLanguage language={language} setLanguage={setLanguage} />
       </Flex>
@@ -98,7 +97,7 @@ const Index = () => {
         </SimpleGrid>
       </Main>
       <Footer>{strings[language].footer}</Footer>
-    </Container>
+    </MyContainer>
   );
 };
 
