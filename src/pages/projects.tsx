@@ -33,6 +33,7 @@ export const Projects = () => {
       <Main>
         <Hero title="Projects" />
         <SimpleGrid columns={[1, 2, 3]} gap={5}>
+          {getCard("soyrecipes")}
           {getCard("quickwits")}
           {getCard("media_server")}
           {getCard("website")}
@@ -48,4 +49,3 @@ export const Projects = () => {
 };
 
 export default Projects;
-

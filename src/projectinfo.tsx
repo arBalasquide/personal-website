@@ -1,4 +1,11 @@
 export const cards = {
+  soyrecipes: {
+    title: "Soy Recipes",
+    EN: "Open source recipes without the bloat.",
+    日本語: "オープンソースの食べ物作り方のサイト。",
+    url: "https://soy.recipes/",
+    dependencies: "Preact / NextJS / CI & CD",
+  },
   quickwits: {
     title: "Quickwits",
     EN: "Full-stack web application game.",
@@ -52,4 +59,3 @@ export const cards = {
 };
 
 export default cards;
-
