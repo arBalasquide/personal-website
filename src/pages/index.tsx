@@ -57,6 +57,8 @@ const Index = () => {
               />
               <MyListItem text="Arduino & Raspberrypi" icon={AtSignIcon} />
               <MyListItem text="NGINX & Apache" icon={AtSignIcon} />
+              <MyListItem text="Ardupilot & PX4" icon={AtSignIcon} />
+              <MyListItem text="Missionplanner" icon={AtSignIcon} />
             </List>
           </GridItem>
           <GridItem>
