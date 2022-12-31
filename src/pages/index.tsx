@@ -24,6 +24,7 @@ const Index = () => {
       </Flex>
       <Main>
         <Hero title="adrián rivera balasquide" />
+	<title>AR Balasquide</title>
         <Text>{strings[language].summary}</Text>
         <SimpleGrid columns={[1, null, 2]} gap={10}>
           <GridItem>

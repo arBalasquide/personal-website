@@ -1,4 +1,5 @@
-import { Link, ListIcon, ListItem } from '@chakra-ui/react';
+import { ListIcon, ListItem } from '@chakra-ui/react';
+import Link from 'next/link';
 import React from 'react';
 import { MySkill } from '../types';
 
@@ -9,7 +10,7 @@ const body = ({text, url}) => {
     )
   } else if(url !== "undefined"){
     return (
-      <Link href={url} flexGrow={1} mr={2}>
+      <Link href={url}>
         {text}
       </Link>
     )

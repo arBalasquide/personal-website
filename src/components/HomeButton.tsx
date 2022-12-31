@@ -1,5 +1,6 @@
 import { ArrowLeftIcon } from "@chakra-ui/icons";
-import { Flex, IconButton, Link } from "@chakra-ui/react";
+import { Flex, IconButton } from "@chakra-ui/react";
+import Link from 'next/link';
 import React from "react"
 
 export const HomeButton = () => {
