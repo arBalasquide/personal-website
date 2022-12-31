@@ -14,6 +14,7 @@ import { Footer } from "../components/Footer";
 import { ToggleLanguage } from "../components/ToggleLanguage";
 import MyListItem from "../components/MyListItem";
 import { MyContainer } from "../components/MyContainer";
+import { Image, Box } from "@chakra-ui/react";
 
 const Index = () => {
   const [language, setLanguage] = useState("EN");
@@ -24,9 +25,15 @@ const Index = () => {
       </Flex>
       <Main>
         <Hero title="adrián rivera balasquide" />
-	<title>AR Balasquide</title>
+        <title>AR Balasquide</title>
         <Text>{strings[language].summary}</Text>
-        <SimpleGrid columns={[1, null, 2]} gap={10}>
+        <Box boxSize="sm">
+          <Image
+            src="https://balasquide.xyz/F3j.png"
+            alt="Adrian Rivera & Libertad Rivera"
+          />
+        </Box>
+        <SimpleGrid columns={[1, null, 2]} gap={6}>
           <GridItem>
             <Text as="u">{strings[language].programming_lang}</Text>
             <List>
