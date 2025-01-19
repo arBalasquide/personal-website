@@ -38,14 +38,14 @@ const Index = () => {
             <Text as="u">{strings[language].programming_lang}</Text>
             <List>
               <br />
-              <MyListItem text="Python" icon={AtSignIcon} />
+              <MyListItem text="C/C++" icon={AtSignIcon} />
               <MyListItem
-                text="Node.js, Javacript, Typescript"
+                text="Python"
                 icon={AtSignIcon}
               />
-              <MyListItem text="Java" icon={AtSignIcon} />
-              <MyListItem text="C/C++" icon={AtSignIcon} />
               <MyListItem text="Bash" icon={AtSignIcon} />
+              <MyListItem text="Octave, MATLAB" icon={AtSignIcon} />
+              <MyListItem text="Nodejs, Typescript, Javascript" icon={AtSignIcon} />
               <MyListItem
                 text="SQL/MySQL, Postgresql, MongoDB"
                 icon={AtSignIcon}
@@ -57,16 +57,18 @@ const Index = () => {
             <List>
               <br />
               <MyListItem text="ROS" icon={AtSignIcon} />
-              <MyListItem text="Linux & Windows" icon={AtSignIcon} />
-              <MyListItem text="OpenCV & YOLO" icon={AtSignIcon} />
+              <MyListItem text="Linux" icon={AtSignIcon} />
+              <MyListItem text="OpenCV" icon={AtSignIcon} />
               <MyListItem
-                text="Graphql, Apollo, React, Next.js"
+                text="DDS"
                 icon={AtSignIcon}
               />
-              <MyListItem text="Arduino & Raspberrypi" icon={AtSignIcon} />
-              <MyListItem text="NGINX & Apache" icon={AtSignIcon} />
+              <MyListItem text="SBC (Arduino, RaspberryPi, Odroid, etc.)" icon={AtSignIcon} />
+              <MyListItem text="Boost" icon={AtSignIcon} />
               <MyListItem text="Ardupilot & PX4" icon={AtSignIcon} />
-              <MyListItem text="Missionplanner" icon={AtSignIcon} />
+              <MyListItem text="Nvidia Jetson, Orin, Xavier" icon={AtSignIcon} />
+              <MyListItem text="MPU5s, Silver Radios, Doodle Radios" icon={AtSignIcon} />
+              <MyListItem text="SDR" icon={AtSignIcon} />
             </List>
           </GridItem>
           <GridItem>
@@ -90,16 +92,6 @@ const Index = () => {
                 text="ar@balasquide.xyz"
                 icon={EmailIcon}
                 url="mailto:ar@balasquide.xyz"
-              />
-              <MyListItem
-                text={strings[language].memoir}
-                icon={EditIcon}
-                url="https://memoir.balasquide.xyz"
-              />
-              <MyListItem
-                text={strings[language].ja_resources}
-                icon={EditIcon}
-                url="https://ja.balasquide.xyz"
               />
             </List>
           </GridItem>
