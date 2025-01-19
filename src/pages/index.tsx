@@ -29,7 +29,7 @@ const Index = () => {
         <Text>{strings[language].summary}</Text>
         <Box boxSize="sm">
           <Image
-            src="https://balasquide.xyz/F3j.png"
+            src="https://pics.balasquide.xyz/cats/me-cat.png"
             alt="Adrian Rivera & Libertad Rivera"
           />
         </Box>
